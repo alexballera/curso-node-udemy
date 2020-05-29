@@ -9,6 +9,7 @@
   "author": "Alex Ballera <alexballera@gmail.com> (http://alexballera.com)",
   "license": "MIT",
   "dependencies": {
+    "colors": "^1.4.0",
     "yargs": "^15.3.1"
   }
 }
