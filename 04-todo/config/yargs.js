@@ -8,7 +8,6 @@ const argv = require('yargs')
             })
             .command('listar', 'Lista una tarea', {
                 descripcion: {
-                    demand: true,
                     alias: 'd'
                 }
             })

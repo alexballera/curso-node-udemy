@@ -22,6 +22,16 @@ const cargarDB = () => {
     }
 }
 
+const getListado = () => {
+    cargarDB()
+    for (const tarea of listadoPorHacer) {
+        console.log('========Por Hacer======='.green)
+        console.log(tarea.descripcion)
+        console.log('Estado: ', tarea.completado)
+        console.log('========================'.green)
+    }
+}
+
 const crear = (descripcion) => {
     let porHacer = {
         descripcion,
@@ -38,5 +48,6 @@ const crear = (descripcion) => {
 }
 
 module.exports = {
-    crear
+    crear,
+    getListado
 }

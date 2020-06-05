@@ -10,7 +10,7 @@ switch (comando) {
         console.log(tarea)
         break;
     case 'listar':
-        console.log('Listar tareas')
+        let listado = porHacer.getListado()
         break;
     case 'actualizar':
         console.log('Actualizar tarea')
