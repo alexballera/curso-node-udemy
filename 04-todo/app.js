@@ -1,6 +1,4 @@
-const argv = require('yargs').argv;
-
-console.log(argv)
+const argv = require("./config/yargs").argv;
 
 let comando = argv._[0]
 
