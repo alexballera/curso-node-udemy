@@ -2,20 +2,16 @@ const express = require('express')
 const app = express()
 
 app.use(express.static(__dirname + '/public'))
- 
-// app.get('/', (req, res) => {
-  
-//   let salida = {
-//     nombre: 'Alexander',
-//     edad: 40,
-//     url: req.url
-//   }
-  
-//   res.send(salida)
-// })
 
-// app.get('/data', (req, res) => {
-//   res.send('Hola Data')
-// })
+// Express HBS engine
+app.set('view engine', 'hbs')
+ 
+app.get('/', (req, res) => {
+  
+  res.render('home', {
+    name: 'Alexander',
+    year: new Date().getFullYear()
+  })
+})
  
 app.listen(3000, () => console.log('Escuchando peticiones en puerto 3000'))
