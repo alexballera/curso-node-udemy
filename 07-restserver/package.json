@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "nodemon server/server"
+    "dev": "nodemon server/server",
+    "start": "node server/server"
   },
   "keywords": [],
   "author": "Alex Ballera <alexballera@gmail.com> (http://alexballera.com)",
