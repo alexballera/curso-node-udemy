@@ -1,3 +1,4 @@
+require('./config/config');
 const express = require('express');
 const app = express();
 
@@ -9,7 +10,7 @@ app.use(bodyParser.urlencoded({ extended: false }))
 // parse application/json
 app.use(bodyParser.json())
 
-const port = 3000
+const port = process.env.PORT
 
 app.get('/usuario', function(req, res) {
   res.json('Get Usuario');
